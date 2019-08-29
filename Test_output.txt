@@ -1,0 +1,34 @@
+york@york:~/Desktop/project (1)/project$ ./a.out
+alarm > help 
+./a.out usage
+
+help            print this help text                                            
+<t>             t=alarm type(start, end)                                        
+quit            exit the program                                                
+
+after entering start type alarm-
+<sec> <msg>     sec=seconds, msg=alarm message(max 128 chars)                   
+
+after entering end type alarm-
+<id>            id=alarm id                                                     
+
+alarm > start
+alarm > 20 hello world
+alarm > Alarm(1) Inserted by Main Thread Into Alarm List at Sat Feb 23 13:34:40 2019: 20 hello world
+alarm > Created New Display Alarm thread 140507381561088 For Alarm(1) at Sat Feb 23 13:34:40 2019: 20 hello world
+alarm > Alarm(1) Assigned to Display Alarm Thread 140507381561088 at Sat Feb 23 13:34:40 2019: 20 hello world
+alarm > start
+alarm > 25 another one
+alarm > Alarm(2) Inserted by Main Thread Into Alarm List at Sat Feb 23 13:34:48 2019: 25 another one
+alarm > Created New Display Alarm thread 140507373168384 For Alarm(2) at Sat Feb 23 13:34:48 2019: 25 another one
+alarm > Alarm(2) Assigned to Display Alarm Thread 140507373168384 at Sat Feb 23 13:34:48 2019: 25 another one
+alarm > end
+alarm > 2
+alarm > Alarm(2) is Scheduled to End.
+alarm > Alarm(2) Ended at Sat Feb 23 13:34:55 2019: 25 another one
+alarm > Alarm(1) Printed by Alarm Thread 140507381561088 at Sat Feb 23 13:35:00 2019: 20 hello world
+alarm > some wrong command
+alarm > Unknown/Invalid Command (do not include trailing spaces in commad).
+alarm > quit
+Good Bye
+
